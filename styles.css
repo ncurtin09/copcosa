@@ -1209,9 +1209,9 @@ textarea:focus-visible {
   }
 
   .brand-logo {
-    width: 150px;
-    height: 54px;
-    transform: scale(1.06);
+    width: 174px;
+    height: 62px;
+    transform: none;
   }
 
   .nav-links {
