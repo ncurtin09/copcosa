@@ -1202,18 +1202,23 @@ textarea:focus-visible {
 
 @media (max-width: 520px) {
   .site-header {
-    position: absolute;
+    position: fixed;
     display: grid;
+    gap: 10px;
+    padding: 10px 14px 12px;
   }
 
   .brand-logo {
-    width: 166px;
-    height: 66px;
-    transform: scale(1.1);
+    width: 150px;
+    height: 54px;
+    transform: scale(1.06);
   }
 
   .nav-links {
     justify-content: flex-start;
+    gap: 8px 12px;
+    font-size: 0.76rem;
+    line-height: 1.15;
     text-align: left;
   }
 
@@ -1234,8 +1239,46 @@ textarea:focus-visible {
     font-size: 1rem;
   }
 
+  .section {
+    padding: 48px 14px;
+  }
+
+  .story-panel {
+    min-height: 100vh;
+    max-width: min(100%, 340px);
+    padding-top: 54px;
+  }
+
+  .story-panel p:not(.eyebrow) {
+    font-size: 0.98rem;
+  }
+
+  .service-filters {
+    justify-content: flex-start;
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+
+  .service-filter {
+    min-height: 40px;
+    padding: 8px 10px;
+    font-size: 0.86rem;
+  }
+
+  .service-card-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+
   .service-card {
-    min-height: 270px;
+    min-height: 238px;
+    padding: 22px 16px;
+  }
+
+  .service-card h3 {
+    min-height: auto;
+    margin: 16px 0;
+    font-size: 1.2rem;
   }
 
   .service-icon {
@@ -1251,15 +1294,80 @@ textarea:focus-visible {
 
   .service-hero-card {
     grid-template-columns: 1fr;
+    padding: 24px 18px;
+  }
+
+  .service-hero-card h1,
+  .contact-copy h1,
+  .locations-copy h1,
+  .clients-page-hero h1 {
+    font-size: clamp(2rem, 12vw, 3rem);
+    line-height: 1;
   }
 
   .contact-page-main,
-  .locations-page-main {
-    padding-top: 156px;
+  .locations-page-main,
+  .service-page-main,
+  .clients-page-main {
+    padding: 132px 14px 48px;
   }
 
   .contact-copy {
-    min-height: 320px;
+    min-height: 240px;
+    padding: 24px 18px;
+  }
+
+  .contact-panel {
+    padding: 16px;
+  }
+
+  .contact-item {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 16px;
+  }
+
+  .contact-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .locations-copy p:not(.eyebrow),
+  .contact-copy p:not(.eyebrow),
+  .clients-page-hero p:not(.eyebrow) {
+    font-size: 1rem;
+  }
+
+  .locations-map {
+    border-radius: 8px;
+  }
+
+  .client-logo-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .client-logo-card {
+    min-height: 130px;
+    padding: 14px;
+  }
+
+  .client-logo-card img {
+    max-width: 118px;
+    max-height: 68px;
+  }
+
+  .bottom-actions {
+    gap: 12px;
+  }
+
+  .action-card {
+    min-height: 112px;
+    padding: 18px 52px 18px 18px;
+  }
+
+  .action-card span {
+    font-size: 1.12rem;
   }
 
   .hero-actions,
