@@ -1,0 +1,20 @@
+window.clientImages = [
+  "clients/1.jpg",
+  "clients/10.jpg",
+  "clients/11.jpg",
+  "clients/12.jpg",
+  "clients/13.jpg",
+  "clients/14.jpg",
+  "clients/15.jpg",
+  "clients/16.jpg",
+  "clients/17.jpg",
+  "clients/18.jpg",
+  "clients/2.jpg",
+  "clients/3.jpg",
+  "clients/4.jpg",
+  "clients/5.png",
+  "clients/6.png",
+  "clients/7.jpg",
+  "clients/8.jpg",
+  "clients/9.jpg"
+];

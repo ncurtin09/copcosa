@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>COPCO S.A.S</title>
+    <meta name="description" content="Servicios, certificaciones, clientes y contacto de COPCO S.A.S.">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header" aria-label="Navegacion principal">
+      <a class="brand" href="#top" aria-label="Inicio COPCO S.A.S">
+        <img class="brand-logo" src="save.jpeg" alt="COPCO S.A.S">
+      </a>
+      <nav class="nav-links">
+        <a href="#services">Servicios</a>
+        <a href="clients.html">Clientes</a>
+        <a href="work.html">Trabaje con Nosotros</a>
+        <a href="locations.html">Ubicaciones</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="scroll-story" aria-label="Resumen COPCO S.A.S">
+        <div class="video-stage">
+          <video
+            id="scrollVideo"
+            class="scroll-video"
+            src="copcoBanner.mp4"
+            aria-hidden="true"
+            autoplay
+            loop
+            muted
+            playsinline
+            preload="auto"
+          ></video>
+          <div class="video-shade" aria-hidden="true"></div>
+          <a class="scroll-cue" href="#services" aria-label="Ir a servicios">
+            <span>Ver servicios</span>
+            <span class="scroll-cue-mark" aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div class="story-content">
+          <article class="story-panel compact-panel">
+            <p class="eyebrow">Estrategia</p>
+            <h2>Direccion clara para operaciones complejas.</h2>
+            <p>Estrategia gerencial, gestion empresarial y direccion de proyectos.</p>
+          </article>
+
+          <article class="story-panel compact-panel">
+            <p class="eyebrow">Gestion</p>
+            <h2>Procesos, activos y riesgos bajo control.</h2>
+            <p>Compras, finanzas, tecnologia y recursos alineados con cada cliente.</p>
+          </article>
+
+          <article class="story-panel compact-panel">
+            <p class="eyebrow">HSEQ</p>
+            <h2>Seguridad, calidad y sostenibilidad.</h2>
+            <p>Cumplimiento, mejora continua y responsabilidad socio-ambiental.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section services-section" id="services">
+        <div class="services-heading">
+          <h2>Nuestros Servicios</h2>
+          <p>Soluciones en Ingenieria y Consultoria</p>
+        </div>
+
+        <div class="service-filters" aria-label="Categorias de servicios">
+          <button class="service-filter is-active" type="button" data-filter="proyectos">Gerencia De Proyectos</button>
+          <button class="service-filter" type="button" data-filter="logistica">Gestion Logistica</button>
+          <button class="service-filter" type="button" data-filter="hseq">HSEQ</button>
+          <button class="service-filter" type="button" data-filter="ingenieria">Ingenieria</button>
+          <button class="service-filter" type="button" data-filter="interventoria">Interventoria</button>
+          <button class="service-filter" type="button" data-filter="otros">Otros Servicios</button>
+        </div>
+
+        <div class="service-card-grid" id="serviceCards" aria-live="polite"></div>
+
+        <div class="bottom-actions" aria-label="Accesos principales">
+          <a class="action-card clients-action" id="clients" href="clients.html">
+            <span>Nuestros Clientes</span>
+            <strong>Ver experiencia</strong>
+          </a>
+          <a class="action-card work-action" id="work" href="work.html">
+            <span>Trabaje con Nosotros</span>
+            <strong>Enviar perfil</strong>
+          </a>
+          <a class="action-card where-action" id="where" href="locations.html">
+            <span>Ubicaciones</span>
+            <strong>Donde estamos</strong>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>COPCO S.A.S</p>
+      <a href="#top">Volver arriba</a>
+    </footer>
+
+    <script src="services-data.js"></script>
+    <script src="service-icons.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
