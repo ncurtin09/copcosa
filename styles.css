@@ -77,6 +77,7 @@ textarea {
   width: clamp(170px, 16vw, 220px);
   height: 76px;
   object-fit: contain;
+  object-position: left center;
   transform: scale(1.12);
   transform-origin: left center;
 }
@@ -1211,6 +1212,7 @@ textarea:focus-visible {
   .brand-logo {
     width: 174px;
     height: 62px;
+    object-position: left center;
     transform: none;
   }
 
