@@ -2,13 +2,14 @@
   --ink: #111827;
   --muted: #5c6472;
   --line: #dbe1f2;
-  --paper: #f7f8fc;
-  --tint: #eef2ff;
+  --paper: #d6dbe2;
+  --tint: #c8d0db;
   --blue: #0000e8;
   --blue-deep: #00009f;
   --red: #e0001b;
   --red-deep: #a90015;
   --white: #ffffff;
+  --surface: #cfd5dd;
   --shadow: 0 24px 70px rgba(0, 0, 120, 0.13);
 }
 
@@ -17,7 +18,7 @@
 }
 
 html {
-  background: var(--blue-deep);
+  background: var(--paper);
   overscroll-behavior-y: none;
   scroll-behavior: smooth;
 }
@@ -52,7 +53,7 @@ textarea {
   justify-content: space-between;
   gap: 24px;
   padding: 14px clamp(18px, 4vw, 52px);
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(207, 213, 221, 0.96);
   color: var(--ink);
   box-shadow: 0 12px 32px rgba(0, 0, 120, 0.08);
   backdrop-filter: blur(14px);
@@ -60,7 +61,7 @@ textarea {
 }
 
 .site-header.is-solid {
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(207, 213, 221, 0.96);
   color: var(--ink);
   box-shadow: 0 12px 32px rgba(0, 0, 120, 0.08);
   backdrop-filter: blur(14px);
@@ -70,16 +71,17 @@ textarea {
   display: inline-flex;
   align-items: center;
   font-weight: 800;
+  flex-shrink: 0;
 }
 
 .brand-logo {
   display: block;
-  width: clamp(170px, 16vw, 220px);
-  height: 76px;
+  width: clamp(68px, 5.4vw, 84px);
+  height: clamp(68px, 5.4vw, 84px);
   object-fit: contain;
-  object-position: left center;
-  transform: scale(1.12);
-  transform-origin: left center;
+  object-position: center;
+  transform: scale(1.28);
+  transform-origin: center;
 }
 
 .nav-links {
@@ -91,6 +93,7 @@ textarea {
   font-size: 0.84rem;
   font-weight: 700;
   text-align: right;
+  color: var(--blue-deep);
 }
 
 .nav-links a,
@@ -301,7 +304,7 @@ textarea:focus-visible {
 }
 
 .button.outline {
-  background: var(--white);
+  background: var(--surface);
   border-color: var(--blue);
   color: var(--blue);
 }
@@ -394,7 +397,7 @@ textarea:focus-visible {
   align-items: center;
   border: 1px solid #dddfe7;
   border-radius: 4px;
-  background: var(--white);
+  background: var(--surface);
   padding: 28px 18px 26px;
   text-align: center;
 }
@@ -444,7 +447,7 @@ textarea:focus-visible {
   justify-content: center;
   border: 1px solid #d8d8d8;
   border-radius: 4px;
-  background: #f5f5f5;
+  background: #d2d8df;
   color: #4e5158;
   cursor: pointer;
   font-size: 1rem;
@@ -470,11 +473,11 @@ textarea:focus-visible {
 }
 
 .clients-section {
-  background: #ffffff;
+  background: var(--paper);
 }
 
 .hseq-section {
-  background: var(--white);
+  background: var(--paper);
 }
 
 .certifications-section {
@@ -495,7 +498,7 @@ textarea:focus-visible {
   min-height: 210px;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: var(--white);
+  background: var(--surface);
   padding: 24px;
   box-shadow: 0 18px 48px rgba(0, 0, 120, 0.08);
 }
@@ -522,7 +525,7 @@ textarea:focus-visible {
   border: 1px solid var(--line);
   border-left: 6px solid var(--red);
   border-radius: 8px;
-  background: var(--white);
+  background: var(--surface);
   padding: 22px;
   color: var(--blue-deep);
   font-size: 1.2rem;
@@ -541,7 +544,7 @@ textarea:focus-visible {
   padding: 24px;
   background:
     linear-gradient(145deg, rgba(0, 0, 232, 0.1), rgba(224, 0, 27, 0.12)),
-    var(--white);
+    var(--surface);
 }
 
 .client-card h3 {
@@ -632,8 +635,8 @@ textarea:focus-visible {
   border: 1px solid rgba(0, 0, 232, 0.12);
   border-radius: 8px;
   background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(238, 242, 255, 0.92)),
-    var(--white);
+    linear-gradient(135deg, rgba(214, 219, 226, 0.98), rgba(200, 208, 219, 0.95)),
+    var(--surface);
   padding: 22px 54px 22px 22px;
   box-shadow: 0 16px 40px rgba(0, 0, 120, 0.08);
   isolation: isolate;
@@ -671,7 +674,7 @@ textarea:focus-visible {
 .action-card:hover {
   transform: translateY(-5px);
   border-color: rgba(0, 0, 232, 0.26);
-  background: var(--white);
+  background: var(--surface);
   box-shadow: 0 24px 58px rgba(0, 0, 120, 0.14);
 }
 
@@ -723,7 +726,7 @@ textarea:focus-visible {
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: #eef2ff;
+  background: #c8d0db;
   box-shadow: var(--shadow);
 }
 
@@ -743,7 +746,7 @@ textarea:focus-visible {
   bottom: 24px;
   padding: 12px 14px;
   border-radius: 8px;
-  background: var(--white);
+  background: var(--surface);
   color: var(--blue-deep);
   box-shadow: 0 12px 36px rgba(0, 0, 120, 0.15);
 }
@@ -815,7 +818,7 @@ textarea:focus-visible {
   border-radius: 8px;
   background:
     linear-gradient(135deg, rgba(0, 0, 232, 0.08), rgba(224, 0, 27, 0.08)),
-    var(--white);
+    var(--surface);
   padding: clamp(28px, 6vw, 72px);
   box-shadow: var(--shadow);
 }
@@ -871,7 +874,7 @@ textarea:focus-visible {
 .service-description-grid article {
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: var(--white);
+  background: var(--surface);
   padding: clamp(22px, 4vw, 38px);
   box-shadow: 0 18px 48px rgba(0, 0, 120, 0.08);
 }
@@ -964,7 +967,7 @@ textarea:focus-visible {
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: var(--white);
+  background: var(--surface);
   box-shadow: var(--shadow);
 }
 
@@ -978,7 +981,7 @@ textarea:focus-visible {
 .contact-panel {
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: var(--white);
+  background: var(--surface);
   box-shadow: var(--shadow);
 }
 
@@ -990,7 +993,7 @@ textarea:focus-visible {
   padding: clamp(30px, 6vw, 72px);
   background:
     linear-gradient(135deg, rgba(0, 0, 232, 0.1), rgba(224, 0, 27, 0.08)),
-    var(--white);
+    var(--surface);
 }
 
 .contact-copy h1 {
@@ -1115,7 +1118,7 @@ textarea:focus-visible {
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: var(--white);
+  background: var(--surface);
   padding: 22px;
   box-shadow: 0 18px 48px rgba(0, 0, 120, 0.08);
 }
@@ -1131,7 +1134,7 @@ textarea:focus-visible {
 .client-empty {
   border: 1px dashed var(--line);
   border-radius: 8px;
-  background: var(--white);
+  background: var(--surface);
   padding: 26px;
   color: var(--muted);
   font-weight: 900;
@@ -1162,7 +1165,7 @@ textarea:focus-visible {
   .site-header {
     align-items: flex-start;
     color: var(--ink);
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(207, 213, 221, 0.96);
   }
 
   .nav-links {
@@ -1210,10 +1213,9 @@ textarea:focus-visible {
   }
 
   .brand-logo {
-    width: 174px;
-    height: 62px;
-    object-position: left center;
-    transform: none;
+    width: 60px;
+    height: 60px;
+    transform: scale(1.24);
   }
 
   .nav-links {
